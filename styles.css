@@ -1,1 +1,26 @@
 /*  your css code here. If applicable */
+/* Container styles */
+#container {
+  margin: 20px;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Before pseudo-element */
+#container::before {
+  content: "<<< Special Start >>> ";
+  color: #f00;         /* red color */
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* After pseudo-element */
+#container::after {
+  content: " <<< Special End >>>";
+  color: #f00;         /* red color */
+  font-size: 20px;
+  display: block;
+  margin-top: 10px;
+}
